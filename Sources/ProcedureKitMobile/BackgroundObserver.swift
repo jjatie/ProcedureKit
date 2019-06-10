@@ -5,6 +5,8 @@
 //
 
 import Foundation
+import ProcedureKit
+#if os(iOS)
 import UIKit
 
 internal protocol BackgroundTaskApplicationProtocol {
@@ -446,3 +448,4 @@ fileprivate extension Protector {
         }
     }
 }
+#endif

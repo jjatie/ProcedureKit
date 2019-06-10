@@ -5,6 +5,8 @@
 //
 
 import Foundation
+import ProcedureKit
+#if os(iOS)
 import UIKit
 
 
@@ -74,3 +76,4 @@ public class UserConfirmationCondition: Condition {
         completion(result)
     }
 }
+#endif

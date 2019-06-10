@@ -7,8 +7,9 @@
 #if SWIFT_PACKAGE
 import ProcedureKit
 import Foundation
-import UIKit
 #endif
+#if os(iOS)
+import UIKit
 
 /// A struct of the views which require autolayout constraints
 public struct AutolayoutViews {
@@ -117,4 +118,4 @@ open class SetChildViewControllerProcedure: UIBlockProcedure {
     }
 }
 
-
+#endif

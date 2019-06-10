@@ -5,6 +5,8 @@
 //
 
 import Foundation
+import ProcedureKit
+#if os(iOS)
 import UIKit
 
 /**
@@ -203,4 +205,4 @@ open class AlertProcedure: Procedure {
     }
 }
 
-
+#endif

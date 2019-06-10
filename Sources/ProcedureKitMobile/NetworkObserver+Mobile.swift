@@ -5,6 +5,8 @@
 //
 
 import Foundation
+import ProcedureKit
+#if os(iOS)
 import UIKit
 
 extension UIApplication: NetworkActivityIndicatorProtocol { }
@@ -40,3 +42,4 @@ public extension NetworkObserver {
         self.init(controller: NetworkActivityController.shared)
     }
 }
+#endif

@@ -5,6 +5,8 @@
 //
 
 import Foundation
+import ProcedureKit
+#if os(iOS)
 import UIKit
 
 public protocol PresentingViewController: class {
@@ -91,3 +93,4 @@ open class UIProcedure: Procedure {
         }
     }
 }
+#endif

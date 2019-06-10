@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 
 import PackageDescription
 
@@ -10,6 +10,7 @@ pkg.products = [
     .library(name: "ProcedureKitCoreData", targets: ["ProcedureKitCoreData"]),
     .library(name: "ProcedureKitLocation", targets: ["ProcedureKitLocation"]),
     .library(name: "ProcedureKitMac", targets: ["ProcedureKitMac"]),
+    .library(name: "ProcedureKitMobile", targets: ["ProcedureKitMobile"]),
     .library(name: "ProcedureKitNetwork", targets: ["ProcedureKitNetwork"]),
     .library(name: "TestingProcedureKit", targets: ["TestingProcedureKit"])
 ]
@@ -20,6 +21,7 @@ pkg.targets = [
     .target(name: "ProcedureKitCoreData", dependencies: ["ProcedureKit"]),    
     .target(name: "ProcedureKitLocation", dependencies: ["ProcedureKit"]),
     .target(name: "ProcedureKitMac", dependencies: ["ProcedureKit"]),
+    .target(name: "ProcedureKitMobile", dependencies: ["ProcedureKit"]),
     .target(name: "ProcedureKitNetwork", dependencies: ["ProcedureKit"]),
     .target(name: "TestingProcedureKit", dependencies: ["ProcedureKit"]),
     .testTarget(name: "ProcedureKitTests", dependencies: ["ProcedureKit", "TestingProcedureKit"]),
